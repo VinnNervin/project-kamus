@@ -1,24 +1,20 @@
 //URL
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
-
-const one = "   halooo"
-console.log(one.trim());
 //SELECTOR DIVS
 const result = document.querySelector(".result");
 const wordMean = document.querySelector(".word-meaning");
 const example = document.querySelector(".word-example");
 const definition = document.querySelector(".definition");
-
 let inputData = document.querySelector("#inp-word")
 
 //SELECTOR BUTTON
 const button = document.querySelector("#search-btn");
 console.log(button);
 
-
 //BUTTON HAS EVENT 
 button.addEventListener("click", testValue)
+
 //TESTING THE INPUT 
 function testValue() {
   const checkINPT = inputData.value.trim();
@@ -36,7 +32,6 @@ function createElement() {
     .then((respone) => respone.json())
     .then((data) => {
       console.log(data)
-
 
       //RESULT DIV 
       result.innerHTML = `
