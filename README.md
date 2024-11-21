@@ -5,8 +5,9 @@
 
 ###  Project Information
 **Language**
-- Vanilla Javascript
-- Vanilla CSS
+- Javascript
+**Style**
+- CSS 
   
 **API**
 - Free Dictionary API 👉 [Source](https://dictionaryapi.dev/)
