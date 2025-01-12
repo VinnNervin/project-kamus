@@ -66,7 +66,7 @@ function createElement() {
       example.innerHTML = `${data[0].meanings[0].definitions[0].example || "there's no an example"}`
     })
 
-    .catch(() => {
+    .catch((error) => {
       result.innerHTML =
         ` 
         <div class="error-rslt">
@@ -84,6 +84,7 @@ function createElement() {
 
       example.innerHTML = "";
       definition.innerHTML = "";
+      console.log(error);
     });
 }
 

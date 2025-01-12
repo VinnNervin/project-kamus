@@ -12,15 +12,16 @@
 <body>
 
     <div class="container">
-        <div class="search-box">
-            <input type="text" name="" placeholder="type a word" id="inp-word" autocomplete="on">
-            <button id="search-btn">search</button>
-        </div>
+        <form onsubmit="return false">
+            <div class="search-box">
+                <input type="text" name="" placeholder="type a word" id="inp-word" autocomplete="on">
+                <button type="submit" id="search-btn">search</button>
+            </div>
+        </form>
 
         <div class="result">
             <div class="word">
                 <h3>mini english's dictionary</h3>
-                <button>b</button>
             </div>
 
             <div class="details">
@@ -33,13 +34,12 @@
                 <h4></h4>
             </div>
             <ul class="word-meaning">
-                <p>created by VinNervin , <br>
-                    thanks to <i>freedictionary.com</i></p>
+                credit to <i>freedictionary.com</i></p>
             </ul>
         </div>
 
         <div class="example">
-            <p class="word-example">thanks</p>
+            <p class="word-example">examples</p>
         </div>
 
 
